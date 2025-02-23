@@ -1,10 +1,9 @@
 /* Ini CSS External */
-
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-main{
+main {
     margin-top: 80px;
 }
 
@@ -80,14 +79,14 @@ main>header {
     text-align: center;
 }
 
-#our-package-section>header {
+#produk-kami-section>header {
     height: 100px;
     align-content: center;
     text-align: center;
     background-color: aliceblue;
 }
 
-.our-package-content {
+.produk-kami-content {
     border: 1px solid;
     height: 300px;
     align-content: center;
