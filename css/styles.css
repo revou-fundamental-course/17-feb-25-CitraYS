@@ -93,6 +93,12 @@ main>header {
     text-align: center;
 }
 
+#tipe-produk{
+    border: outset;
+    padding: 5px;
+    border-radius: 8px;
+}
+
 #call-us-section>header {
     height: 100px;
     align-content: center;
@@ -106,6 +112,8 @@ main>header {
     align-content: center;
     text-align: center;
 }
+
+
 
 footer {
     text-align: center;
