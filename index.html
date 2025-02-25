@@ -8,30 +8,31 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    
 </head>
 
 <body>
     <!-- CSS Responsive -->
     <style>
-    @media (max-width: 750px) {
-        .main-header {
-            flex-direction: column;
-            text-align: center;
+        @media (max-width: 750px) {
+            .main-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
         }
-        
-        nav {
-            flex-direction: column;
-        }
-        
-        nav a {
-            display: block;
-            margin: 5px 0;
-        }
-    }
-</style>
+    </style>
     <!-- Header & Navigation -->
     <header class="main-header">
-        
+
         <!-- Logo Company -->
         <div class="logo-company"></div>
 
@@ -53,14 +54,28 @@
         <section class="main-content">
             <!-- Banner Autoslide -->
             <aside class="main-container">
-                <p>Banner Autoslide</p>
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                        <img width="45%" src="../assets/Icon_Aliya.jpeg" alt="Slide 1">
+                    </div>
+                    <div class="slide fade">
+                        <img  width="45%" src="../assets/Banner1.jpeg" alt="Slide 2">
+                    </div>
+                    <div class="slide fade">
+                        <img  width="45%" src="../assets/Banner2.jpeg" alt="Slide 3">
+                    </div>
+
+                    <!-- Navigation buttons 
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>-->
+                </div>
             </aside>
 
             <!-- Form Pilih Produk -->
-                <section class = "pilih-produk">
+            <section class="pilih-produk">
                 <h3>Pilih Produk</h3>
-                <p>Untuk bertransaksi, Silahkan Isi Form di Bawah Ini :</p>
-                <form>
+                <p>Untuk Bertransaksi, Silahkan Isi Form di Bawah Ini :</p>
+                <form id="productForm">
                     <label for="name">Your Name:</label>
                     <input type="text" id="name" name="name">
 
@@ -77,7 +92,7 @@
                     <button type="submit">Submit</button>
                 </form>
             </section>
-            
+
         </section>
 
         <!-- produk-kami Section -->
@@ -89,7 +104,18 @@
             <!-- Content produk-kami -->
             <article class="produk-kami-content">
                 <h2>Produk Kami</h2>
-                <p>Lorem Ipsum Dolor Sit Amet Adipiscing ....</p>
+                <table border="1">
+                    <tr>
+                        <th>Pulsa</th>
+                        <th>Paket Data</th>
+                        <th>Voucher Game</th>
+                    </tr>
+                    <tr>
+                        <td>10.000</td>
+                        <td>Telkomsel 5 GB</td>
+                        <td>Diamond Mobile Legend</td>
+                    </tr>
+                </table>
             </article>
         </section>
 
@@ -101,32 +127,32 @@
 
             <!-- Content Call Us Packages -->
             <article class="call-us-content">
-                <h3>Contact Us</h3>
-                <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
-                <form>
-                    <label for="name">Your Name:</label>
-                    <input type="text" id="name" name="name">
-
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email">
-
-                    <label for="interest">What are you interested in?</label>
-                    <select id="interest" name="interest">
-                        <option value="package1">Package 1</option>
-                        <option value="package2">Package 2</option>
-                        <option value="package3">Package 3</option>
-                    </select>
-
-                    <button type="submit">Submit</button>
-                </form>
+                <h3>Daftar Pesanan</h3>
+                <p>Terima Kasih Sudah Berbelanja</p>
+                <section class="table-section" id="orderSection">
+                    <table border="1" id="orderTable">
+                        <tr>
+                            <th>Nama</th>
+                            <th>Email</th>
+                            <th>Produk</th>
+                        </tr>
+                    </table>
+                    <table border="1"
+                    <tr>
+                        <td colspan="3">Terima Kasih</td>
+                    </tr>
+                </table>
+                </section>
+                
             </article>
         </section>
     </main>
-
+    <br>
     <!-- Footer -->
     <footer>
         <p>Powered By Citra Yunela Sari</p>
     </footer>
+    <script src="jss/script.js"></script>
 </body>
-
 </html>
+

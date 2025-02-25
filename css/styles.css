@@ -5,6 +5,7 @@ body {
 
 main {
     margin-top: 80px;
+    /*background-color: lavender;*/
 }
 
 .main-header {
@@ -17,6 +18,7 @@ main {
     width: 100%;
     z-index: 1000;
     background-color: rgb(2, 71, 26);
+    /*background-image: linear-gradient(0deg, ghostwhite, transparent);*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,11 +74,15 @@ main>header {
 }
 
 .main-container {
-    border: 1px solid;
+    border: 0px solid;
     height: 400px;
     flex: 1;
     align-content: center;
     text-align: center;
+    background-color: darkblue;
+    background-image: linear-gradient(100deg, #6c6cf9, transparent);
+    border-radius: 20px;
+    padding: 20px;
 }
 
 #produk-kami-section>header {
@@ -86,10 +92,15 @@ main>header {
 }
 
 .produk-kami-content {
+    color: white;
     border: 1px solid;
     height: 300px;
     align-content: center;
     text-align: center;
+    background-color: rgb(2, 71, 26);
+    background-image: linear-gradient(0deg, #6c6cf9, darkblue);
+    border-radius: 20px;
+    padding: 20px;
 }
 
 #tipe-produk{
@@ -101,15 +112,59 @@ main>header {
 #call-us-section>header {
     height: 100px;
     align-content: center;
-    text-align: center;
-    gap: 5px;
+    text-align: center;    
 }
 
 .call-us-content {
-    border: 1px solid;
     height: 300px;
     align-content: center;
     text-align: center;
+    background-color: #cd5c5c;
+    background-image: linear-gradient(180deg, #fda6a6, transparent);
+    gap: 5px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.table-section {
+    text-align: center;
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 8px 13px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    width: 33.33%;
+}
+
+th {
+    background-color:darkblue;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    color: black;
+}
+
+tr {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+    transition: 0.3s;
 }
 
 .contact-us {
@@ -121,7 +176,8 @@ main>header {
 }
 
 .pilih-produk {
-    background-color: indianred;
+    background-color: #cd5c5c;
+    background-image: linear-gradient(180deg, #fda6a6, transparent);
     border-radius: 20px;
     padding: 20px;
 }
@@ -154,6 +210,7 @@ main>header {
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 50px;
 }
 
 .pilih-produk button:hover {
@@ -161,5 +218,45 @@ main>header {
 }
 
 footer {
-    text-align: center;
+    color: white;
+    width: 100%;
+    background-color: rgb(2, 71, 26);
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 45%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+@media (max-width: 750px) {
+    .prev, .next {
+        font-size: 16px;
+        padding: 5px;
+    }
 }
