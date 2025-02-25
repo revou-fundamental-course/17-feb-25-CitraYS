@@ -16,7 +16,7 @@ main {
     padding-bottom: 10px;
     width: 100%;
     z-index: 1000;
-    background-color: darkorange;
+    background-color: rgb(2, 71, 26);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +38,7 @@ nav {
 
 nav>a {
     border: 1px solid;
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 8px;
     border-radius: 4px;
@@ -83,7 +83,6 @@ main>header {
     height: 100px;
     align-content: center;
     text-align: center;
-    background-color: aliceblue;
 }
 
 .produk-kami-content {
@@ -103,7 +102,7 @@ main>header {
     height: 100px;
     align-content: center;
     text-align: center;
-    background-color: antiquewhite;
+    gap: 5px;
 }
 
 .call-us-content {
@@ -113,7 +112,53 @@ main>header {
     text-align: center;
 }
 
+.contact-us {
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+.pilih-produk {
+    background-color: indianred;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.pilih-produk h3 {
+    margin-top: 10;
+}
+
+.pilih-produk form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pilih-produk label {
+    font-weight: bold;
+}
+
+.pilih-produk input,
+.pilih-produk select,
+.pilih-produk button {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: large;
+}
+
+.pilih-produk button {
+    background-color: rgb(2, 71, 26);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.pilih-produk button:hover {
+    background-color: #555;
+}
 
 footer {
     text-align: center;

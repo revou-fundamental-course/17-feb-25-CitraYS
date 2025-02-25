@@ -11,8 +11,27 @@
 </head>
 
 <body>
+    <!-- CSS Responsive -->
+    <style>
+    @media (max-width: 750px) {
+        .main-header {
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        nav {
+            flex-direction: column;
+        }
+        
+        nav a {
+            display: block;
+            margin: 5px 0;
+        }
+    }
+</style>
     <!-- Header & Navigation -->
     <header class="main-header">
+        
         <!-- Logo Company -->
         <div class="logo-company"></div>
 
@@ -37,39 +56,28 @@
                 <p>Banner Autoslide</p>
             </aside>
 
-            <!-- Form Contact Us -->
-            <aside class="main-container">
-                <table>
-                    <tr>
-                        Nama :<br>
-                    </tr>
-                    <tr>
-                        <form><br>
-                    </tr>
-                    <tr>
-                        Lokasi :<br>
-                    </tr>
-                    <tr>
-                        <label for="tipe-produk">Tipe Produk : </label>
-                        <select name="tipe-produk" id="tipe-produk">
-                            <option value="Pulsa">Pulsa</option>
-                            <option value="Paket Data">Paket Data</option>
-                            <option value="Voucher Game">Voucher Game</option>
-                            <option value="Token PLN">Token PLN</option>
-                        </select><br>
-                    </tr>
-                    <tr>
-                        <label for="tipe-produk">Tipe Produk : </label>
-                        <select name="tipe-produk" id="tipe-produk">
-                            <option value="Pulsa">Pulsa</option>
-                            <option value="Paket Data">Paket Data</option>
-                            <option value="Voucher Game">Voucher Game</option>
-                            <option value="Token PLN">Token PLN</option>
-                        </select><br>
-                    </tr>
+            <!-- Form Pilih Produk -->
+                <section class = "pilih-produk">
+                <h3>Pilih Produk</h3>
+                <p>Untuk bertransaksi, Silahkan Isi Form di Bawah Ini :</p>
+                <form>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name">
 
-                </table>
-            </aside>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="produk">Apa Yang Anda Butuhkan?</label>
+                    <select id="produk" name="produk">
+                        <option value="Pulsa">Pulsa</option>
+                        <option value="Paket Data">Paket Data</option>
+                        <option value="Voucher Game">Voucher Game</option>
+                    </select>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+            
         </section>
 
         <!-- produk-kami Section -->
@@ -93,8 +101,24 @@
 
             <!-- Content Call Us Packages -->
             <article class="call-us-content">
-                <h2>Pesan</h2>
-                <p>Lorem Ipsum Dolor Sit Amet Adipiscing ....</p>
+                <h3>Contact Us</h3>
+                <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
+                <form>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="interest">What are you interested in?</label>
+                    <select id="interest" name="interest">
+                        <option value="package1">Package 1</option>
+                        <option value="package2">Package 2</option>
+                        <option value="package3">Package 3</option>
+                    </select>
+
+                    <button type="submit">Submit</button>
+                </form>
             </article>
         </section>
     </main>
