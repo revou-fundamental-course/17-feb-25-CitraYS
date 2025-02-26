@@ -12,7 +12,7 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
-
+//ini ganti slide
 function changeSlide(n) {
     slideIndex += n - 1;
     let slides = document.getElementsByClassName("slide");
@@ -24,6 +24,7 @@ function changeSlide(n) {
     slides[slideIndex].style.display = "block";
 }
 
+// Data otomatis masuk ke tabel daftar pesanan
 document.getElementById("productForm").addEventListener("submit", function(event) {
     event.preventDefault();
     let name = document.getElementById("name").value;
