@@ -30,19 +30,29 @@ document.getElementById("productForm").addEventListener("submit", function(event
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
     let produk = document.getElementById("produk").value;
-    
+
+    if(produk == 'Pulsa'){
+        produk ='10.000';
+    }else if(produk == 'Paket Data'){
+        produk ='Telkomsel 5 GB';
+    }else if(produk == 'Voucher Game'){
+        produk ='Diamond Mobile Legend';
+    }else{
+        produk ='Gas 3 Kg';
+    }
+
     let table = document.getElementById("orderTable");
     let newRow = table.insertRow(-1);
     let cell1 = newRow.insertCell(0);
     let cell2 = newRow.insertCell(1);
     let cell3 = newRow.insertCell(2);
-    
+
     cell1.textContent = name;
     cell2.textContent = email;
     cell3.textContent = produk;
     
     document.getElementById("productForm").reset();
-
+    alert('Pesanan Berhasil');
     // Scroll otomatis ke daftar pesanan
     document.getElementById("orderSection").scrollIntoView({ behavior: "smooth" });
 });
