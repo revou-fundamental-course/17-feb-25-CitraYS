@@ -76,7 +76,6 @@ main>header {
 
 .main-container {
     border: 0px solid;
-    height: 400px;
     flex: 1;
     align-content: center;
     text-align: center;
@@ -85,6 +84,8 @@ main>header {
     border-radius: 20px;
     padding: 20px;
 }
+
+
 
 #produk-kami-section>header {
     height: 100px;
