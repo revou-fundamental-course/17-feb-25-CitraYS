@@ -71,6 +71,7 @@ main>header {
 .main-content {
     display: flex;
     gap: 24px;
+    
 }
 
 .main-container {
@@ -109,13 +110,13 @@ main>header {
     border-radius: 8px;
 }
 
-#call-us-section>header {
+#pesanan-section>header {
     height: 100px;
     align-content: center;
     text-align: center;    
 }
 
-.call-us-content {
+.pesanan-content {
     height: 300px;
     align-content: center;
     text-align: center;
@@ -258,5 +259,6 @@ footer {
     .prev, .next {
         font-size: 16px;
         padding: 5px;
+        
     }
 }
